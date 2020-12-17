@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Route, Switch, Redirect, Link } from 'react-router-dom';
-import { IconButton, Collapse } from '@material-ui/core';
+import { IconButton, Collapse, Fade } from '@material-ui/core';
 import { Link as Scroll } from 'react-scroll';
-// import SortIcon from '@material-ui/icons/Sort';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import AboutMeContainer from '../containers/AboutMeContainer'
 
@@ -51,7 +50,7 @@ import AboutMeContainer from '../containers/AboutMeContainer'
         <div className={classes.div}>
             {/* <CssBaseline /> */}
             <div className={classes.root} id="welcome">
-            <Collapse
+            <Fade
                 in={checked}
                 {...(checked ? { timeout: 2000 } : {})}
                 collapsedHeight={50}
@@ -68,7 +67,7 @@ import AboutMeContainer from '../containers/AboutMeContainer'
                     </IconButton>
                 </Scroll>
                 </div>
-            </Collapse>
+            </Fade>
 
             </div>
             <AboutMeContainer />

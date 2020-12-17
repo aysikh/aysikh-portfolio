@@ -23,7 +23,6 @@ function App() {
     <div className={classes.bg}>
         <CssBaseline />
         <WelcomePage />
-        <AboutMe />
     </div>
   );
 }
