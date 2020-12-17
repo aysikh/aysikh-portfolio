@@ -6,10 +6,10 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import { Collapse } from '@material-ui/core';
-
+import useWindowPosition from '../hook/useWindowPosition';
 import ProfilePic from '../assets/profilepic.jpg'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 645,
     background: 'rgba(0,0,0,0.5)',
@@ -19,49 +19,35 @@ const useStyles = makeStyles({
     height: "35rem",
     width: "30rem"
   },
-  title: {
-    fontFamily: 'Nunito',
-    fontWeight: 'bold',
-    fontSize: '2rem',
-    color: '#fff',
-  },
-  desc: {
-    fontFamily: 'Nunito',
-    fontSize: '1.1rem',
-    color: '#ddd',
-  },
-});
+  stuff: {
+    // minHeight: '100vh',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    [theme.breakpoints.down('md')]: {
+      flexDirection: 'column',
+    },
+    },
+}));
 
 export default function AboutMe({ place, checked }) {
   const classes = useStyles();
+//   const checked = useWindowPosition('header');
 
   return (
     <Collapse in={checked} {...(checked ? { timeout: 1000 } : {})}>
-      <Card className={classes.root}>
-        <CardMedia
-          className={classes.media}
-          image={ProfilePic}
-          title="Contemplative Reptile"
-        />
+        <div>
+        <Card className={classes.stuff} checked={checked}>
+            <CardMedia
+            className={classes.media}
+            image={ProfilePic}
+            title="Contemplative Reptile"
+            />
         </Card>
-        {/* <CardContent> */}
-          {/* <Typography
-            gutterBottom
-            variant="h5"
-            component="h1"
-            className={classes.title}
-          >
-            hello
-          </Typography>
-          <Typography
-            variant="body2"
-            color="textSecondary"
-            component="p"
-            className={classes.desc}
-          >
-            testingtesting
-          </Typography> */}
-        {/* </CardContent> */}
+        <Card className={classes.stuff} checked={checked}>
+            upcoming software engineer with passion for design
+        </Card>
+        </div>
     </Collapse>
   );
 }
