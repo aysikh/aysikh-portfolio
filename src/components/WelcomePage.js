@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Route, Switch, Redirect, Link } from 'react-router-dom';
-import { AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
+import { IconButton, Collapse } from '@material-ui/core';
 import { Link as Scroll } from 'react-scroll';
-import { CssBaseline } from '@material-ui/core';
 // import SortIcon from '@material-ui/icons/Sort';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import AboutMeContainer from '../containers/AboutMeContainer'
@@ -19,21 +18,6 @@ import AboutMeContainer from '../containers/AboutMeContainer'
             margin: '0',
             border: '0',
             overflowX: 'hidden'
-        },
-        appbar: {
-            backgroundColor: 'transparent',
-            boxShadow: '0px 0px 0px 0px',
-            margin: '0',
-            border: '0'
-        },
-        appbarWrapper: {
-            width: '80%',
-            margin: '0 auto',
-            boxShadow: 'none'
-        },
-        appbarTitle: {
-            flexGrow: '1',
-            boxShadow: 'none'
         },
         icon: {
             color: 'black',
@@ -65,18 +49,8 @@ import AboutMeContainer from '../containers/AboutMeContainer'
 
     return (
         <div className={classes.div}>
-            <CssBaseline />
-            <div className={classes.root} id="homepage">
-            <AppBar className={classes.appbar}>
-                <Toolbar className={classes.appbarWrapper} >
-                    <h1 className={classes.appbarTitle}>
-                        amy sikhammountry
-                        {/* <img src={TopLogo} style={{marginLeft: '80rem', height: '8rem'}}/>  */}
-                    </h1>
-                    navbar?
-                </Toolbar>
-            </AppBar>
-
+            {/* <CssBaseline /> */}
+            <div className={classes.root} id="welcome">
             <Collapse
                 in={checked}
                 {...(checked ? { timeout: 2000 } : {})}
@@ -84,13 +58,13 @@ import AboutMeContainer from '../containers/AboutMeContainer'
                 >
                 <div className={classes.container}>
                 <h1 className={classes.title}>
-                    who is  <br />
+                    the one and only  <br />
                     <span style={{color: '#f8bbd0'}}>amy sikhammountry</span>
                 </h1>
                 <h3>learn more below </h3>
-                <Scroll to="info-image" smooth={true}>
+                <Scroll to="about me" smooth={true}>
                     <IconButton>
-                        <KeyboardArrowDownIcon style={{color: '#006064', fontSize: '5rem'}} />
+                        <KeyboardArrowDownIcon style={{color: '#c48b9f', fontSize: '5rem'}} />
                     </IconButton>
                 </Scroll>
                 </div>
