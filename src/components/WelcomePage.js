@@ -6,6 +6,7 @@ import { Link as Scroll } from 'react-scroll';
 import { CssBaseline } from '@material-ui/core';
 // import SortIcon from '@material-ui/icons/Sort';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import AboutMeContainer from '../containers/AboutMeContainer'
 
 
     const useStyles = makeStyles((theme) => ({
@@ -69,9 +70,10 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
             <AppBar className={classes.appbar}>
                 <Toolbar className={classes.appbarWrapper} >
                     <h1 className={classes.appbarTitle}>
-                        <img src={TopLogo} style={{marginLeft: '80rem', height: '8rem'}}/> 
+                        amy sikhammountry
+                        {/* <img src={TopLogo} style={{marginLeft: '80rem', height: '8rem'}}/>  */}
                     </h1>
-                    <Navbar2 />
+                    navbar?
                 </Toolbar>
             </AppBar>
 
@@ -83,7 +85,7 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
                 <div className={classes.container}>
                 <h1 className={classes.title}>
                     who is  <br />
-                    <span style={{color: '#1b5e20'}}>amy sikhammountry</span>
+                    <span style={{color: '#f8bbd0'}}>amy sikhammountry</span>
                 </h1>
                 <h3>learn more below </h3>
                 <Scroll to="info-image" smooth={true}>
@@ -95,7 +97,7 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
             </Collapse>
 
             </div>
-            component here for next page
+            <AboutMeContainer />
         </div>
     );
     }
