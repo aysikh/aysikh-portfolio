@@ -7,8 +7,10 @@ import Tab from '@material-ui/core/Tab';
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
-    backgroundColor: 'transparent',
-    position: 'fixed'
+    marginTop: '10rem',
+    pading: '5rem',
+    // backgroundColor: 'transparent',
+    // position: 'fixed'
   },
 });
 
@@ -21,6 +23,7 @@ export default function CenteredTabs() {
   };
 
   return (
+    <div>
     <Paper className={classes.root}>
       <Tabs
         value={value}
@@ -28,11 +31,12 @@ export default function CenteredTabs() {
         indicatorColor="transparent"
         textColor="secondary"
         centered
-      >
+        >
         <Tab label="About Me" />
         <Tab label="Projects" />
         <Tab label="Contact Me" />
       </Tabs>
     </Paper>
+        </div>
   );
 }

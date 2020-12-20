@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
 
     return (
         <div>
-        <NavBar checked={checked} className={classes.appbar}/> 
+          <NavBar checked={checked}/> 
         <div className={classes.root}>
             <Collapse
             in={checked}
