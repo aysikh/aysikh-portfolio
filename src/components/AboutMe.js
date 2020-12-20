@@ -32,7 +32,7 @@ export default function AboutMe({ checked }) {
 
   return (
     <div className={classes.div}>
-        <div className={classes.root} id="about me">
+        <div className={classes.root}>
             <div>
             <Card checked={checked}>
                 <CardMedia
