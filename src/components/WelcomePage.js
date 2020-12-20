@@ -57,10 +57,13 @@ import AboutMeContainer from '../containers/AboutMeContainer'
                 >
                 <div className={classes.container}>
                 <h1 className={classes.title}>
-                    the one and only  <br />
+                    software engineer 
+                    <br />
                     <span style={{color: '#f8bbd0'}}>amy sikhammountry</span>
                 </h1>
-                <h3>learn more below </h3>
+
+                <h3>learn more about me below </h3>
+
                 <Scroll to="about me" smooth={true}>
                     <IconButton>
                         <KeyboardArrowDownIcon style={{color: '#c48b9f', fontSize: '5rem'}} />
