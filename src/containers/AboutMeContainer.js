@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     return (
         <div id="about me">
           <NavBar checked={checked}/> 
-          <div id="social-links-div">
+          {/* <div id="social-links-div">
             <a href={`mailto:amy.sikhammountry@gmail.com`} >
               <img src={Email} alt='' className={classes.icons} />
             </a><br></br>
@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
             <a href="https://medium.com/aysikh" rel="noopener noreferrer" target="_blank" >
               <img src={Medium} alt='' className={classes.icons} />
             </a>
-          </div>
+          </div> */}
         <div className={classes.root}>
             <Collapse
             in={checked}
