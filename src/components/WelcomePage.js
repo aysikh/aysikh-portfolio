@@ -13,6 +13,7 @@ import HTML from '../assets/html.png'
 import JS from '../assets/javascript.png'
 import Material from '../assets/material.png'
 import Rails from '../assets/rails.png'
+import Reacticon from '../assets/react.png'
 import Ruby from '../assets/ruby.png'
 import Sass from '../assets/sass.png'
 
@@ -60,35 +61,38 @@ import Sass from '../assets/sass.png'
 
     return (
         <div className={classes.div}>
-            {/* <CssBaseline /> */}
-            <div className={classes.root} id="welcome">
+          <div className={classes.root} id="welcome">
             <Collapse
             in={checked}
-            {...(checked ? {timeout: 1000 } : {})}
+            {...(checked ? {timeout: 2000 } : {})}
+            // collapsedHeight={50}
             >
-            
-            <img src={Ruby} alt='' className={classes.icons} />
-
+              <div className={classes.container} id="icons"> 
+                <img src={Ruby} alt='ruby' className={classes.icons} />
+                <img src={Rails} alt='rubyonrails' className={classes.icons} />
+                <img src={JS} alt='javascript' className={classes.icons} />
+                <img src={Reacticon} alt='react' className={classes.icons} />
+              </div>
             </Collapse>
+            <br/>
             <Fade
-                in={checked}
-                {...(checked ? { timeout: 2000 } : {})}
-                collapsedHeight={50}
-                >
+              in={checked}
+              {...(checked ? { timeout: 2000 } : {})}
+              collapsedHeight={50}
+              >
                 <div className={classes.container}>
-                <h1 className={classes.title}>
-                    software engineer 
-                    <br />
-                    <span style={{color: '#f8bbd0'}}>amy sikhammountry</span>
-                </h1>
+                  <h1 className={classes.title}>
+                      software engineer 
+                      <br />
+                      <span style={{color: '#f8bbd0'}}>amy sikhammountry</span>
+                  </h1>
+                  <h3>learn more about me below </h3>
 
-                <h3>learn more about me below </h3>
-
-                <Scroll to="about me" smooth={true}>
-                    <IconButton>
-                        <KeyboardArrowDownIcon style={{color: '#c48b9f', fontSize: '5rem'}} />
-                    </IconButton>
-                </Scroll>
+                  <Scroll to="about me" smooth={true}>
+                      <IconButton>
+                          <KeyboardArrowDownIcon style={{color: '#c48b9f', fontSize: '5rem'}} />
+                      </IconButton>
+                  </Scroll>
                 </div>
             </Fade>
 
