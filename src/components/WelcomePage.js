@@ -5,7 +5,16 @@ import { IconButton, Collapse, Fade } from '@material-ui/core';
 import { Link as Scroll } from 'react-scroll';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import AboutMeContainer from '../containers/AboutMeContainer'
-
+import Boostrap from '../assets/boostrap.png'
+import CSS from '../assets/css.png'
+import Github from '../assets/github.png'
+import Heroku from '../assets/heroku.png'
+import HTML from '../assets/html.png'
+import JS from '../assets/javascript.png'
+import Material from '../assets/material.png'
+import Rails from '../assets/rails.png'
+import Ruby from '../assets/ruby.png'
+import Sass from '../assets/sass.png'
 
     const useStyles = makeStyles((theme) => ({
         root: {
@@ -35,6 +44,9 @@ import AboutMeContainer from '../containers/AboutMeContainer'
         div:{
             margin: '0',
             border: '0'
+        },
+        icons:{
+          height: '3rem'
         }
         }));
 
@@ -50,6 +62,14 @@ import AboutMeContainer from '../containers/AboutMeContainer'
         <div className={classes.div}>
             {/* <CssBaseline /> */}
             <div className={classes.root} id="welcome">
+            <Collapse
+            in={checked}
+            {...(checked ? {timeout: 1000 } : {})}
+            >
+            
+            <img src={Ruby} alt='' className={classes.icons} />
+
+            </Collapse>
             <Fade
                 in={checked}
                 {...(checked ? { timeout: 2000 } : {})}
