@@ -5,9 +5,8 @@ import { IconButton, Collapse, Fade } from '@material-ui/core';
 import { Link as Scroll } from 'react-scroll';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import AboutMeContainer from '../containers/AboutMeContainer'
-import Boostrap from '../assets/boostrap.png'
+import Bootstrap from '../assets/bootstrap.png'
 import CSS from '../assets/css.png'
-import Github from '../assets/github.png'
 import Heroku from '../assets/heroku.png'
 import HTML from '../assets/html.png'
 import JS from '../assets/javascript.png'
@@ -69,9 +68,25 @@ import Sass from '../assets/sass.png'
             >
               <div className={classes.container} id="icons"> 
                 <img src={Ruby} alt='ruby' className={classes.icons} />
+                <br/>
                 <img src={Rails} alt='rubyonrails' className={classes.icons} />
+                <br/>
                 <img src={JS} alt='javascript' className={classes.icons} />
+                <br/>
                 <img src={Reacticon} alt='react' className={classes.icons} />
+                <br/>
+                <img src={HTML} alt='react' className={classes.icons} />
+                <br/>
+                <img src={CSS} alt='react' className={classes.icons} />
+                <br/>
+                <img src={Bootstrap} alt='react' className={classes.icons} />
+                <br/>
+                <img src={Material} alt='react' className={classes.icons} />
+                <br/>
+                <img src={Sass} alt='react' className={classes.icons} />
+                <br/>
+                <img src={Heroku} alt='react' className={classes.icons} />
+                <br/>
               </div>
             </Collapse>
             <br/>
@@ -82,9 +97,9 @@ import Sass from '../assets/sass.png'
               >
                 <div className={classes.container}>
                   <h1 className={classes.title}>
-                      software engineer 
-                      <br />
                       <span style={{color: '#f8bbd0'}}>amy sikhammountry</span>
+                      <br/> 
+                      full-stack developer
                   </h1>
                   <h3>learn more about me below </h3>
 
