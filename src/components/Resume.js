@@ -1,15 +1,13 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import ResumePDF from '../assets/SE-Resume2021.pdf'
-import { Document, Page } from 'react-pdf'
 
 export default function Resume() {
 
   return(
     <div>
-      <Document file={ResumePDF}>
-        <Page pageNumber={1}/>
-      </Document>
-      
+      <center>
+        <iframe src={ResumePDF} style={{height:'60rem', width: '50rem'}}/>
+      </center>
     </div>
   )
 }
