@@ -1,13 +1,14 @@
 import React from 'react';
-import ProgressiveImage from 'react-progressive-image';
-import { projectInfo } from '../constants';
+// import ProgressiveImage from 'react-progressive-image';
+// import { projectInfo } from '../constants';
 import Fade from '@material-ui/core/Fade';
 import Hidden from '@material-ui/core/Hidden';
 
 export default function Project() {
   return(
     <div>
-     <div className='ProjectsCard'>
+      Projects are here
+     {/* <div className='ProjectsCard'>
       <div className='ProjectsCard-left'>
         <ProgressiveImage src={image} placeholder={mini}>
           {(src, loading) => (
@@ -39,8 +40,8 @@ export default function Project() {
       <div className='ProjectsCard-right'>
         <span className='ProjectsCard-right-header'>{name}</span>
         <p>{description}</p>
-      </div>
-    </div>
+      </div> */}
+    {/* </div> */}
     </div>
   )
 }
