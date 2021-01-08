@@ -48,7 +48,7 @@ export default function AboutMe({ checked }) {
   return (
     <div>
       <div className={classes.root} id="about-me">
-        <Grid item xs={ 3 } >
+        <Grid item xs={ 2 } >
           <div id="social-links-div" className={classes.iconsdiv}>
             <a href={`mailto:amy.sikhammountry@gmail.com`} >
               <img src={Email} alt='' className={classes.icons} />
@@ -64,7 +64,7 @@ export default function AboutMe({ checked }) {
             </a>
           </div>
         </Grid>
-        <Grid item xs={ 5 } style={{margin: '2rem'}}>
+        <Grid item xs={ 6 } style={{margin: '2rem'}}>
           <Card checked={checked}>
               <CardMedia
               className={classes.media}
@@ -73,9 +73,9 @@ export default function AboutMe({ checked }) {
               />
           </Card>
         </Grid>
-        <Grid item xs={ 5 } > 
+        <Grid item xs={ 6 } > 
           <Card style={{padding: '3rem'}}>
-            Before my interest in programming, I was a full-time personal trainer and bartender on the side. Fitness and health was and is still a huge factor in my lifestyle. When the pandemic occurred, it helped me realize that I had to make a huge decision for myself. I wanted to continue training, but I was also concerned about my family’s well-being. I sought out the path of becoming a programmer to have the chance to provide for my family in case another pandemic were to occur in the future. I want to have a higher probability of keeping my job and continue supporting my family. In the process, I fell in love with programming and the endless amount of material I could possibly learn. Microstrategy is a company I want to work for because of the doors it could open up. It is a company that promotes diversity, innovation, and growth. I am very enthusiastic to continue learning and emerge in new experiences that Microstrategy has to offer. 
+          Before my interest in programming, I was a full-time personal trainer and bartender on the side. Fitness and health was and is still a huge factor in my lifestyle. When the pandemic occurred, it helped me realize that I had to make a huge decision for myself. I wanted to continue training, but I was also concerned about my family’s well-being. I sought out the path of becoming a programmer to have the chance to provide for my family in case another pandemic were to occur in the future. I want to have a higher probability of keeping my job and continue supporting my family. In the process, I fell in love with programming and the endless amount of material I could possibly learn. Microstrategy is a company I want to work for because of the doors it could open up. It is a company that promotes diversity, innovation, and growth. I am very enthusiastic to continue learning and emerge in new experiences that Microstrategy has to offer. 
           </Card>
         </Grid>
       </div>
