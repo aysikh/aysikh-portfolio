@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import ProfilePic from '../assets/profilepic.jpg'
 import { CssBaseline } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
+import { IconButton, Collapse, Fade } from '@material-ui/core';
 
 import Email from '../assets/email.png'
 import Github from '../assets/github.png'
@@ -42,13 +43,20 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-export default function AboutMe({ checked }) {
+export default function AboutMe() {
   const classes = useStyles();
+  const [checked, setChecked] = useState(false);
+  useEffect(() => {
+      setChecked(true);
+  }, []);
 
   return (
     <div>
       <div className={classes.root} id="about-me">
         <Grid item xs={ 2 } >
+          <Fade
+          in={checked}
+          {...(checked ? {timeout: 8000} : {})}>
           <div id="social-links-div" className={classes.iconsdiv}>
             <a href={`mailto:amy.sikhammountry@gmail.com`} >
               <img src={Email} alt='' className={classes.icons} />
@@ -63,6 +71,7 @@ export default function AboutMe({ checked }) {
               <img src={Medium} alt='' className={classes.icons} />
             </a>
           </div>
+          </Fade>
         </Grid>
         <Grid item xs={ 6 } style={{margin: '2rem'}}>
           <Card checked={checked}>
