@@ -9,6 +9,7 @@ import AboutMe from './components/AboutMe'
 import Projects from './components/Projects'
 import Resume from './components/Resume'
 import WelcomePage from './components/WelcomePage'
+import Contact from './components/Contact'
 
 const useStyles = makeStyles((theme) => ({
     bg: {
@@ -33,6 +34,7 @@ function App() {
             <Route exact path="/aboutme" component={AboutMe} />
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/resume" component={Resume} />
+            <Route exact path="/contact" component={Contact} /> 
           </div>
         </Switch>
       </BrowserRouter>
