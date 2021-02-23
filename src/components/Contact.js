@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom'
 import Container from '@material-ui/core/Container';
 import TextField from '@material-ui/core/TextField';
 import Paper from '@material-ui/core/Paper';
@@ -30,7 +31,7 @@ export default function Contact(){
             <TextField 
               fullWidth
               id="outlined-basic" 
-              label="Name" 
+              label="Full Name" 
               variant="outlined" 
               />
               <br /> <br />
@@ -54,7 +55,7 @@ export default function Contact(){
             <TextField
               fullWidth
               id="outlined-multiline-static"
-              label="Your response"
+              label="Inquire"
               multiline
               rows={15}
               variant="outlined"
@@ -69,7 +70,13 @@ export default function Contact(){
               </Button> 
             </form>
         </Paper>
-        </Container>
+        <br /> <br /> 
+        <Button style={{height: '2.5rem', padding: '2rem', backgroundColor: 'pink'}}>
+        <Link to="/"  style={{textDecoration: 'none', fontSize: '3rem'}}>
+            {"Back to Home"}
+        </Link>
+      </Button>
+      </Container>
     </div>
   )
 }
