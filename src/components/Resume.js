@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom'
-import ResumePDF from '../assets/SE-Resume2021.pdf'
+import ResumePDF from '../assets/ASResume.pdf'
 import Button from '@material-ui/core/Button';
 
 export default function Resume() {
