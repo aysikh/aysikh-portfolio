@@ -28,15 +28,15 @@ function App() {
     <div className={classes.bg}>
     <BrowserRouter>
         <CssBaseline />
-        <Switch>
-          <div>
-            <Route exact path="/" component={WelcomePage} />
-            <Route exact path="/aboutme" component={AboutMe} />
-            <Route exact path="/projects" component={Projects} />
-            <Route exact path="/resume" component={Resume} />
-            <Route exact path="/contact" component={Contact} /> 
-          </div>
-        </Switch>
+          <Switch>
+            <div>
+              <Route path="/" component={WelcomePage} />
+              <Route path="/aboutme" component={AboutMe} />
+              <Route path="/projects" component={Projects} />
+              <Route path="/resume" component={Resume} />
+              <Route path="/contact" component={Contact} /> 
+            </div>
+          </Switch>
       </BrowserRouter>
     </div>
   );
